@@ -92,9 +92,9 @@ for (let i = 0; i < 10; i++) {
 }
 
 
-/**
- * Functions declared above the code that uses them
- * Code first then functions- this is mostly preffered because we already know what the code does
+/*
+  Functions declared above the code that uses them
+  Code first then functions- this is mostly preffered because we already know what the code does
  */
 
 
@@ -117,3 +117,38 @@ if (n < 0) {
 } else {
     alert( pow(x, n) );
 }
+
+
+/*Comments 
+Good comments allow us to maintain code well, come back to it after a delay and use it more effectively*/
+
+
+// Documenting a function usage(special syntax jsDoc) e.g
+
+/**
+ * Returns x raised to the n-th power
+ * 
+ * @param {number} x The number to raise.
+ * @param {number} n The power, must be a natural number.
+ * @return {number} x raised to the n-th power
+ */
+
+ function pow(x, n) {
+    //  ...
+ }
+
+
+ /* 
+ Such comments allow us to undestand the purpose of the function and use it the right way 
+ without looking its code
+ 
+ Comment this: 
+ - Overall architecture, high-level view
+ - Function overview
+ - Important solutions, especially when not immediately obvious
+
+ Avoid comments:
+ - That tell how code works and what it does
+ - Put them only if it's possible to make the code so simple and self-descriptive that it doesnt
+ require those
+ */
