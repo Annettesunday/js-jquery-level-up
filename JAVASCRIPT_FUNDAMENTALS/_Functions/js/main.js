@@ -239,5 +239,67 @@ function getLeastNum(a, b) {
 }
 
 
+// Function expression - Here the function is created and assigned to the variable explicitly
+
+let sayHi = function(){
+    alert('Hello');
+}
+alert(sayHi); //shows the function code
+
+// Note: THe last line does not run the function because there are not paranthesis  after sayHi.
+// Ther are other programming languages where any mention of a fuction namr causes its execution, but JS is not like that
 
 
+// We can copy a function to another variable
+
+// Create
+function sayHi(){
+    alert('Hello')
+}
+
+// Copy
+
+let func = sayHi; ///putting paranthesis here would cause func to output the result of sayHi
+
+
+func(); //run the copy, it works
+sayHi(); //this still works too
+
+
+
+// Callback functions - passing functions as values
+
+
+// A function declaration is only visible inside the code block in which it resides. It is processed before the 
+// code block is executed
+
+
+// Function expressions are created when the execution flow reached them
+
+
+// Arrow functions is always better than function expressions
+
+
+
+let func = (arg1, arg2, ...argN) => expression;
+
+
+// If we only have only one argument, the paranthesis can be omitted, making that even shorter
+
+
+let double = n => n * 2;
+
+
+// If there are no argurments, paranthesis should be empty but present
+
+let sayHi = () => alert('Hello');
+
+
+// The curly braces opens a multiline function
+
+let sum  = (a, b) => {
+    let result = a + b;
+    return result;
+};
+
+alert(sum(1, 2))
