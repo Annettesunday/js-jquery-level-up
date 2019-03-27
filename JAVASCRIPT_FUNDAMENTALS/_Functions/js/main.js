@@ -72,11 +72,12 @@ function showMessage() {
     let message = `Hello ${userName}`
 
     alert(message);
+    alert(userName); //Annette; the function did not read the outer variable
 }
 
 showMessage(); //the function will create and use its own variable
 
-alert(userName); //Annette; the function did not read the outer variable
+
 
 
 
