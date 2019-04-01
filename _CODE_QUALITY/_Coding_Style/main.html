@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    mocha.setup('bdd'); // minimal setup
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+    let assert = chai.assert;
+  </script>
+</head>
+
+<body>
+
+  <script>
+    function pow(x, n) {
+      /* function code is to be written, empty now */
+    }
+  </script>
+
+  <!-- the script with tests (describe, it...) -->
+  <script src="test.js"></script>
+
+  <!-- the element with id="mocha" will contain test results -->
+  <div id="mocha"></div>
+
+  <!-- run tests! -->
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
+
+
+
+<!--
+The above can be divided into five parts:
+1. The head - add third party libraries and styles for tests
+2. The script- with the function to test, in our case - with the code for pow
+3. The tests  - in our case an external script test.js that has describe("pow", ...) from above
+4. The html element <div id="mocha"> will be used by Mocha to output results
+5. The tests are started by the command mocha.run
+
+-->
