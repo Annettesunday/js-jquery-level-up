@@ -166,7 +166,7 @@ strings and numbers would do. Or when an object is compared using == with a stri
 
 
 // binary plus 
-let total = car1 + CanvasRenderingContext2D;
+let total = "car1" + "car2";
 
 // obj == string/number/symbol
 if (user == 1) {};
